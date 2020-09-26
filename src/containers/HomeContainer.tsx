@@ -22,8 +22,6 @@ export default function HomeContainer() {
     dispatch(fetchProducts("doctor"));
   }, []);
 
-  console.log(products);
-
   return (
     <>
       <Home products={products} onPressAdd={onPressAdd} />

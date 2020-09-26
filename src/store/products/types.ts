@@ -7,7 +7,7 @@ export interface Product {
       medium: string;
     };
   };
-  isAdded: boolean;
+  total: number;
 }
 
 export interface ProductsState {

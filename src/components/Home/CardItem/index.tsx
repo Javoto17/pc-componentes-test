@@ -1,5 +1,4 @@
 import React from "react";
-import PropTypes from "prop-types";
 
 import { FaPlus } from "react-icons/fa";
 
@@ -14,6 +13,7 @@ import {
   PriceProduct,
   Button,
   WrapperActions,
+  Total,
 } from "./styles";
 
 // import Counter from "../Counter";
@@ -23,6 +23,7 @@ type defaultProps = {
   image: string;
   onPressAdd(): void;
   score: number;
+  total: number;
 };
 
 export default function CardItem({
@@ -30,6 +31,7 @@ export default function CardItem({
   image,
   onPressAdd,
   score,
+  total,
   ...props
 }: defaultProps) {
   return (
@@ -44,15 +46,7 @@ export default function CardItem({
           <Button onClick={onPressAdd}>
             <FaPlus color="fff" size={18} />
           </Button>
-          {/* {quantity === 0 ? (
-     
-          ) : (
-            <Counter
-              onPressReduce={onPressReduce}
-              quantity={quantity}
-              onPressAdd={onPressAdd}
-            />
-          )} */}
+          <Total> {total} </Total>
         </WrapperActions>
       </InfoWrapper>
     </Article>

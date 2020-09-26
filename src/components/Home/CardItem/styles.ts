@@ -47,6 +47,12 @@ export const PriceProduct = styled.p`
   color: ${(props) => props.theme.textColorPrimary};
 `;
 
+export const Total = styled.p`
+  font-size: 12px;
+  font-weight: 500;
+  color: ${(props) => props.theme.textColorPrimary};
+`;
+
 export const Button = styled.button`
   border-radius: 5px;
   background: ${(props) => props.theme.primary};
@@ -64,20 +70,4 @@ export const WrapperActions = styled.div`
   justify-content: space-between;
   align-items: center;
   margin-top: auto;
-`;
-
-export const WrapperCounter = styled.div`
-  display: flex;
-  overflow: hidden;
-  border-radius: 5px;
-  align-self: strech;
-`;
-
-export const InputCounter = styled.input`
-  display: block;
-  border: 0px;
-  width: 42px;
-  text-align: center;
-  outline: none;
-  background: #fff;
 `;

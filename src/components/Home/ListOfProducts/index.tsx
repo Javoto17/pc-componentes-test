@@ -18,7 +18,7 @@ export default function ListOfProducts({
   return (
     <GridList>
       {products.map((product, i) => {
-        const { score, show } = product;
+        const { score, show, total } = product;
         const { name, id, image } = show;
         return (
           <CardItem
@@ -26,10 +26,10 @@ export default function ListOfProducts({
             name={name}
             onPressAdd={() => {
               onPressAdd(product);
-              console.log(product);
             }}
             image={image.medium}
             score={score}
+            total={total}
           />
         );
       })}
