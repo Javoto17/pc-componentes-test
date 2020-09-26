@@ -8,6 +8,6 @@ declare module "styled-components" {
 }
 
 export const theme: DefaultTheme = {
-  primary: "#333",
-  textColorPrimary: "red"
+  primary: "#5061ef",
+  textColorPrimary: "#232735"
 };
