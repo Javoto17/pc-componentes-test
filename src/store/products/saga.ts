@@ -7,8 +7,8 @@ import { getProducts } from "../../api/products";
 function* fetchProducts(action: FetchProductsAction) {
   try {
     const { payload } = action;
-    const response = yield call(getProducts, payload);
-    yield put(fetchProductsSuccess(response));
+    const { data } = yield call(getProducts, payload);
+    yield put(fetchProductsSuccess(data));
   } catch (error) {
     yield put(fetchProductsError(error));
   }

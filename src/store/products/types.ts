@@ -1,7 +1,13 @@
 export interface Product {
-  id: number;
-  name: string;
   score: number;
+  show: {
+    id: number;
+    name: string;
+    image: {
+      medium: string;
+    };
+  };
+  isAdded: boolean;
 }
 
 export interface ProductsState {

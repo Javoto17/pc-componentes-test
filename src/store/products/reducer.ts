@@ -18,7 +18,13 @@ export function productsReducer(
     case FETCH_PRODUCTS_SUCCESS:
       return {
         ...state,
-        products: [...state.products, ...action.payload]
+        products: [
+          ...state.products,
+          ...action.payload.map((product) => ({
+            ...product,
+            isAdded: false
+          }))
+        ]
       };
     case ADD_PRODUCT:
       return {
