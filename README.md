@@ -1,3 +1,17 @@
+# PC Componentes
+
+[Demo](https://pc-componentes.vercel.app/)
+
+## Features
+
+- [x] Use redux/redux-saga
+- [x] Use TypeScript.
+- [x] Use React Router Dom.
+- [x] Use Styled Components.
+- [x] Add can add items into Cart
+- [x] Deploy with Vercel
+- [] Cart View
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
